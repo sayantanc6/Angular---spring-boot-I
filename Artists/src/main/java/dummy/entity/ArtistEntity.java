@@ -22,7 +22,7 @@ import lombok.NoArgsConstructor;
 public class ArtistEntity { 
 
 	@Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
 	@SerializedName("Artistid")
 	@Column(name = "Artistid",unique = true)
     private Long ArtistId;
