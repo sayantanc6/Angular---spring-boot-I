@@ -3,7 +3,6 @@ package dummy.model;
 import javax.validation.constraints.Max;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
-import java.time.LocalDateTime;
 
 import org.springframework.stereotype.Component;
 
@@ -39,8 +38,5 @@ public class ArtistModel {
 	@NotNull(message = "description is required")
 	@SerializedName("description")
 	private String description;
-       
-        @SerializedName("date")
-	private LocalDateTime date;
 
 }
